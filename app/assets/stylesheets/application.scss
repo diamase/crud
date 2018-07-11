@@ -17,7 +17,9 @@
 body {
   background-color: #fafafa;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica,
-sans-serif;
+  sans-serif;
+  height: 100%;
+
 }
 /* ## NAVBAR CUSTOMISATIONS ## */
 .navbar-brand { a{
@@ -140,3 +142,56 @@ display: inline;
   margin-top: 20px;
   margin-bottom: 40px;
 }
+
+html {
+  height: 100%
+}
+
+.devise-panel {
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 8px}
+
+
+.form-element {
+  margin-top: 15px
+}
+
+.devise-form-container{
+  padding: 10px 10px 10px 10px
+}
+
+.devise-button {
+  background-color: #54b5cc;
+  border-color: #54b5cc;
+  color:white;
+  margin-top: 10px
+}
+
+.reg {
+  background-image: image-url('regbackg.jpg');
+}
+
+.bg {
+  padding-top: 4em;
+  height: 100%;
+  background-image: image-url('regbackg.jpg');
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.login {
+  background-image: image-url('loginbg.jpg')
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+.alert {
+  margin-bottom: 0px;
+}
+
+.user_remember_me {margin-left: 20px;}
