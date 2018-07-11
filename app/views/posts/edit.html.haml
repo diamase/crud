@@ -1,0 +1,9 @@
+.text-center
+  = image_tag @post.image.url(:medium)
+
+= render 'form'
+
+.text-center.edit-links
+  = link_to "Delete Post", post_path, method: :delete, data:{confirm:"Are you sure?"}
+  |
+  = link_to "Cancel", posts_path
