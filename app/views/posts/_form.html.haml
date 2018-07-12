@@ -2,7 +2,8 @@
   .posts
     .post-body
       .image-wrap
-        = image_tag 'placeholder.jpg', id: 'image-preview', class: 'img-responsive'
+        - if @post.id.nil?
+          = image_tag 'placeholder.jpg', id: 'image-preview', class: 'img-responsive'
         = simple_form_for @post, html: {class: 'form-horizontal', multipart:true} do |f|
           .row
             .col-md-12.text-center
