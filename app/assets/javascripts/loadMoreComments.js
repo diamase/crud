@@ -3,6 +3,7 @@ var Append = {};
 Append.open = false;
 
 function ClickableCommentsLink(){
+  console.log("test")
   $('.more-comments').click( function() {
     $(this).on('ajax:success', function(event, data, status,xhr) {
       event.preventDefault();
@@ -12,7 +13,6 @@ function ClickableCommentsLink(){
       Append.open = true;
       Append.comment = true;
       Append.link = false;
-        console.log(data)
     });
   });
 }
