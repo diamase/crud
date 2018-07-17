@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :create, :update, :destroy]
+  before_action :set_post
 
   def create
     @comment = @post.comments.build(comment_params)
@@ -13,6 +13,15 @@ class CommentsController < ApplicationController
       flash.now[:alert] = "Your comment couldn't be created. Please check the form."
       render root_path
     end
+  end
+
+  def index
+    @comments = @post.comments.order("created_at ASC")
+
+    respond_to do |format|
+      format.html { render layout: !request.xhr?}
+    end
+    
   end
 
   def destroy
