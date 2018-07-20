@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  acts_as_voter
   has_attached_file :image, styles: { medium: "640x"}
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
   # Include default devise modules. Others available are:
