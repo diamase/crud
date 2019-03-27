@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2018_07_19_101943) do
     t.datetime "updated_at", null: false
     t.string "image_file_name"
     t.string "image_content_type"
-    t.integer "image_file_size"
+    t.bigint "image_file_size"
     t.datetime "image_updated_at"
     t.integer "user_id"
     t.index ["user_id"], name: "index_posts_on_user_id"
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 2018_07_19_101943) do
     t.string "username"
     t.string "image_file_name"
     t.string "image_content_type"
-    t.integer "image_file_size"
+    t.bigint "image_file_size"
     t.datetime "image_updated_at"
     t.text "bio"
     t.index ["email"], name: "index_users_on_email", unique: true
