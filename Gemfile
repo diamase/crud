@@ -76,3 +76,4 @@ gem 'kaminari', '~> 1.1.1'
 gem 'jquery-turbolinks'
 gem 'rails-erd', group: :development
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'tire'

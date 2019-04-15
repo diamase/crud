@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
     respond_to do |format|
       format.html { render layout: !request.xhr?}
     end
-    
+
   end
 
   def destroy
@@ -43,6 +43,10 @@ class CommentsController < ApplicationController
 
   def set_post
     @post = Post.find(params[:post_id])
+  end
+
+  def index
+    @comments = comments.search(params)
   end
 
 end
