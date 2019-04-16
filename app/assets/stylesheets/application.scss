@@ -15,15 +15,15 @@
 @import "bootstrap";
 
 body {
-  background-color: #fafafa;
-  font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica,
+  background-color: #e6e6e6;
+  font-family: proxima-nova, 'Papyrus', Arial, Helvetica,
   sans-serif;
   height: 100%;
 
 }
 /* ## NAVBAR CUSTOMISATIONS ## */
 .navbar-brand { a{
-    color: #125688;
+    color: #8db600;
   }
 }
 .navbar-default {
@@ -165,7 +165,7 @@ html {
 .devise-button {
   background-color: #54b5cc;
   border-color: #54b5cc;
-  color:white;
+  color:green;
   margin-top: 10px
 }
 
